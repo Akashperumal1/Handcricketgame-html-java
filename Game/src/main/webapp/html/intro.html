@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro </title>
+	<style type="text/css">
+	/* Add your CSS styles here */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+	
+	</style>
+</head>
+<body>
+    <video id="introVideo" width="100%" height="auto" controls autoplay>
+        <source src="../resources/videos/intro1.mp4" type="video/mp4">
+        
+    </video>
+
+    <script >
+ // Wait for the video to finish playing
+    document.getElementById('introVideo').addEventListener('ended', function() {
+        // Redirect to main.html after video finishes
+        window.location.href = './toss.html';
+    });
+
+    </script>
+</body>
+</html>

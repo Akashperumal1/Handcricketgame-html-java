@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Input</title>
+    <style>
+        .data {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-bottom:1.5pc;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        body{
+            height: 100vh;
+            overflow: hidden; /* To prevent scroll bars */
+        }
+        #inputForm {
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: red;
+            font-size: 20px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: none;
+            background-color:transparent;
+            border-bottom: 1px solid #ccc; /* Add border bottom only */
+            outline: none; /* Remove outline */
+            color: red;
+        }
+        button {
+            background-color: #4caf50;
+            color: red;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        #output {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: none;
+        }
+        /* Style the video */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+       ::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop>
+        <source src="../resources/videos/intro2.mp4" type="video/mp4">
+       
+    </video>
+
+    <div class="data">
+        <div id="inputForm">
+            <form action="../SubmitScoreServlet" method="post"  onsubmit="displayInput()" >
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+    
+                <label for="teamName">Team Name:</label>
+                <select id="teamName" name="teamName" required>
+                    <option value="CSK">CSK</option>
+                    <option value="MI">MI</option>
+                      <option value="RCB">RCB</option>
+			            <option value="KKR">KKR</option>
+			            <option value="LSG">LSG</option>
+			            <option value="SRH">SRH</option>
+			            <option value="GT">GT</option>
+			            <option value="KLP">KXLP</option>
+			            <option value="RR">RR</option>
+                    <!-- Add more options as needed -->
+                </select>
+    
+                <button type="submit">Submit</button>
+            </form>          
+        </div>
+        <div id="output"></div>
+    </div>
+    
+    <script>
+        function displayInput() {
+            var userName = document.getElementById('userName').value;
+            var teamName = document.getElementById('teamName').value;
+
+            var outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `Your Name: ${userName}<br>Team Name: ${teamName}`;
+            outputDiv.style.display = 'block';
+
+            // Add some color and animation
+            outputDiv.style.backgroundColor = '#4caf50';
+            outputDiv.style.color = '#fff';
+            outputDiv.style.padding = '5px 10px';
+            outputDiv.style.borderRadius = '5px';
+            outputDiv.style.animation = 'fadeIn 0.5s';
+
+            // Hide the input form
+            var inputForm = document.getElementById('inputForm');
+            inputForm.style.display = 'none';
+
+            // Open main.html in a new window with query parameters
+            var mainUrl = './main.html';
+            var queryParams = `?userName=${encodeURIComponent(userName)}&teamName=${encodeURIComponent(teamName)}`;
+            window.open(mainUrl + queryParams);
+
+            setTimeout(() => {
+                outputDiv.style.animation = 'none';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
