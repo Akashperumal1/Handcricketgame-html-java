@@ -1,10 +1,3 @@
 # Handcricketgame-html-java
-![Screenshot 2024-01-30 202924](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/5e24cf70-4a24-47e5-9cd8-48e9ac1b03c7)
-![Screenshot 2024-01-30 202851](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/e4a1abda-3c7a-4f7f-ae50-f5614263a7c1)
-![Screenshot 2024-01-30 202851](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/256e62f2-94c7-4647-a64e-4b5a4f7a1578)
-![Screenshot 2024-01-30 202851](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/2c05329f-4a0f-45cb-960b-acedcd9d9adf)
-![Screenshot 2024-01-30 202924](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/a517a9b5-31e8-49ac-90cb-a84826f1cf4f)
-![Screenshot 2024-01-30 202924](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/ab128911-7105-4d94-ada7-5e05751ed62c)
-![Screenshot 2024-01-30 202730](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/ad7f70c5-c077-4e12-8ac1-379e7d0b6643)
-![Screenshot 2024-01-30 202730](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/ca175d26-4c6e-4a2d-a760-84a119e365c7)
-![Screenshot 2024-01-30 202730](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/82f658d0-7f81-43df-aeea-5fc8fee57fe3)
+
+![Screenshot 2024-01-30 202730](https://github.com/Akashperumal1/Handcricketgame-html-java/assets/112136599/fd09d22c-35da-40ec-8eee-3d9fdd243239)
